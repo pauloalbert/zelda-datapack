@@ -1,5 +1,5 @@
-#Prerequisites: run by an entity with misc_x misc_y misc_z two decimals (9.50 = 950)
-#return: 
+#Prerequisites: run by an entity with misc_x misc_y misc_z TWO DECIMALS (9.50 = 950)
+#return: in misc_x misc_y misc_z, TWO DECIMALS 
 scoreboard players operation temp misc_x = @s misc_x
 scoreboard players operation temp misc_y = @s misc_y
 scoreboard players operation temp misc_z = @s misc_z
