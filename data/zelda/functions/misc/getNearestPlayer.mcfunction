@@ -1,19 +1,19 @@
 ###This function returns the pos to the nearest player.
 
-###Prerequisites: run as entity getting the direction.
+#Prerequisites: run as entity getting the direction.
 
-###return, nearestPlayerArguments for players [gNPX, gNPY, gNPZ] for [dx,dy,dz] respectively
-execute store result score @s gNPX run data get entity @s Pos[0]
-execute store result score @s gNPY run data get entity @s Pos[1]
-execute store result score @s gNPZ run data get entity @s Pos[2]
+#return: nearestPlayerArguments for player's [gNPX, gNPY, gNPZ] for [dx,dy,dz] respectively, saved under the entity which called the func
+execute store result score @s misc_x run data get entity @s Pos[0]
+execute store result score @s misc_y run data get entity @s Pos[1]
+execute store result score @s misc_z run data get entity @s Pos[2]
 
 tag @p add nearestPlayer_filter
-execute store result score @p[tag=nearestPlayer_filter] gNPX run data get entity @p[tag=nearestPlayer_filter] Pos[0]
-execute store result score @p[tag=nearestPlayer_filter] gNPY run data get entity @p[tag=nearestPlayer_filter] Pos[1]
-execute store result score @p[tag=nearestPlayer_filter] gNPZ run data get entity @p[tag=nearestPlayer_filter] Pos[2]
+execute store result score @p[tag=nearestPlayer_filter] misc_x run data get entity @p[tag=nearestPlayer_filter] Pos[0]
+execute store result score @p[tag=nearestPlayer_filter] misc_y run data get entity @p[tag=nearestPlayer_filter] Pos[1]
+execute store result score @p[tag=nearestPlayer_filter] misc_z run data get entity @p[tag=nearestPlayer_filter] Pos[2]
 
-scoreboard players operation @s gNPX -= @p[tag=nearestPlayer_filter] gNPX
-scoreboard players operation @s gNPY -= @p[tag=nearestPlayer_filter] gNPY
-scoreboard players operation @s gNPZ -= @p[tag=nearestPlayer_filter] gNPZ
-
+scoreboard players operation @s misc_x -= @p[tag=nearestPlayer_filter] misc_x
+scoreboard players operation @s misc_y -= @p[tag=nearestPlayer_filter] misc_y
+scoreboard players operation @s misc_z -= @p[tag=nearestPlayer_filter] misc_z
 tag @p remove nearestPlayer_filter
+
