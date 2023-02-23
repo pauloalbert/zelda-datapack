@@ -1,5 +1,6 @@
 {
     "values": [
-      "zelda:game/load"
+      "zelda:game/load",
+      "math:zprivate/init"
     ]
 }
