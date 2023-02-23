@@ -15,5 +15,10 @@ execute store result score @p[tag=nearestPlayer_filter] misc_z run data get enti
 scoreboard players operation @s misc_x -= @p[tag=nearestPlayer_filter] misc_x
 scoreboard players operation @s misc_y -= @p[tag=nearestPlayer_filter] misc_y
 scoreboard players operation @s misc_z -= @p[tag=nearestPlayer_filter] misc_z
+
+scoreboard players operation @s misc_x *= #-1 constant
+scoreboard players operation @s misc_y *= #-1 constant
+scoreboard players operation @s misc_z *= #-1 constant
+
 tag @p remove nearestPlayer_filter
 
