@@ -12,8 +12,6 @@ scoreboard players operation in math = temp misc_x
 scoreboard players operation in math += temp misc_y
 scoreboard players operation in math += temp misc_z
 
-execu
-
 scoreboard players operation @s misc_d = out math
 #Division by zero i feel like i just ignore.
 scoreboard players operation @s misc_x /= out math
