@@ -13,8 +13,13 @@ scoreboard players operation in math += temp misc_y
 scoreboard players operation in math += temp misc_z
 scoreboard players operation in math /= #100 constant
 execute as @s run function math:root100
-
 scoreboard players operation @s misc_d = out math
+ 
+tellraw @a {"score":{"name":"out","objective":"math"}}
+tellraw @a {"score":{"name":"@s","objective":"misc_x"}}
+tellraw @a {"score":{"name":"@s","objective":"misc_y"}}
+tellraw @a {"score":{"name":"@s","objective":"misc_z"}}
+
 scoreboard players operation out math /= #100 constant
 
 #Division by zero i feel like i just ignore.
