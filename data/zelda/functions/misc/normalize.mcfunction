@@ -11,7 +11,7 @@ scoreboard players operation temp misc_z *= temp misc_z
 scoreboard players operation in math = temp misc_x
 scoreboard players operation in math += temp misc_y
 scoreboard players operation in math += temp misc_z
-
+scoreboard players operation in math /= #100 constant
 execute as @s run function math:root100
 
 scoreboard players operation @s misc_d = out math
