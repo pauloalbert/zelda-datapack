@@ -11,7 +11,7 @@ execute if score in math matches 214748.. run tellraw @a [{"text":"MATH Error:",
 execute if score in math matches ..-1 run tellraw @a [{"text":"MATH Error:","color":"red"},{"text":" Fast Sqrt() Imaginary Number (input negative)","color":"white"}]
 
 scoreboard players operation #temp1 math = in math
-scoreboard players operation in math *= #10000 constant
+scoreboard players operation in math *= #100 constant
 
 ### a
 scoreboard players set out math 1255
