@@ -15,6 +15,8 @@ scoreboard players operation in math /= #100 constant
 execute as @s run function math:root100
 
 scoreboard players operation @s misc_d = out math
+scoreboard players operation out math /= #100 constant
+
 #Division by zero i feel like i just ignore.
 scoreboard players operation @s misc_x /= out math
 scoreboard players operation @s misc_y /= out math
