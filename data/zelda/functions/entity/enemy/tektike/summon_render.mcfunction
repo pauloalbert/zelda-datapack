@@ -1,0 +1,2 @@
+summon block_display ~ ~ ~ {CustomName:'"tektike"',block_state:{Name:"sculk_catalyst"},Tags:["tektike","display","red"]}
+summon interaction ~ ~ ~ {CustomName:'"tektike"',Tags:["tektike","hitbox","red"]}

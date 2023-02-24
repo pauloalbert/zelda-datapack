@@ -11,8 +11,8 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 
 #random jump height
 #get random direction
-scoreboard players set in math 60
-scoreboard players set in1 math 120
+scoreboard players set in math 40
+scoreboard players set in1 math 70
 function math:rng/range
 scoreboard players operation @s behavior0 = out math
 
