@@ -19,6 +19,7 @@ scoreboard players operation @s behavior0 = out math
 ###jump_forward(Direction, behavior0)
 execute as @s at @s run function zelda:entity/enemy/tektike/jump_forward
 
+#Rotate display and hitbox to match armor stand
 tag @s add passenger_filter
-execute on passengers run data modify entity @s Rotation[0] set from entity @e[type=armor_stand,tag=passenger_filter,limit=1,name="red tektike",sort=nearest] Rotation[0]
+execute on passengers run data modify entity @s Rotation[0] set from entity @e[type=armor_stand,tag=passenger_filter,limit=1,sort=nearest] Rotation[0]
 tag @s remove passenger_filter
