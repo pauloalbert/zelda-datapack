@@ -1,5 +1,2 @@
-execute unless entity @e[type=block_display,tag=tektike] at @s run summon block_display ~ ~ ~ {CustomName:'"tektike"',block_state:{Name:"sculk_catalyst"},Tags:["tektike","display","red"]}
-execute unless entity @e[type=interaction,tag=tektike] at @s run summon interaction ~ ~ ~ {CustomName:'"tektike"',Tags:["tektike","hitbox","red"]}
+###Point here is to make the block/item_display show the proper model at the correct angle.
 
-tp @e[type=block_display,sort=nearest,limit=1,tag=tektike] ~ ~1 ~
-tp @e[type=interaction,sort=nearest,limit=1,tag=tektike] ~ ~1 ~
