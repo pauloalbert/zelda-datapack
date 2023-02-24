@@ -4,10 +4,17 @@
 scoreboard players set in math 0
 scoreboard players set in1 math 359
 function math:rng/range
-scoreboard players operation @s direction = out math
-scoreboard players operation in math = @s direction
+scoreboard players operation @s Direction = out math
+scoreboard players operation in math = @s Direction
 
-execute store result entity @s Rotation[0] float 1 run scoreboard players get @s direction
+execute store result entity @s Rotation[0] float 1 run scoreboard players get @s Direction
 
-#get forward direction
+#random jump height
+#get random direction
+scoreboard players set in math 60
+scoreboard players set in1 math 120
+function math:rng/range
+scoreboard players operation @s behavior0 = out math
+
+###jump_forward(Direction, behavior0)
 execute as @s at @s run function zelda:entity/enemy/tektike/jump_forward
