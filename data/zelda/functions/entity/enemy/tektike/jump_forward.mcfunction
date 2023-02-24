@@ -1,0 +1,1 @@
+summon marker ^ ^ ^1 {CustomName:'"tektike_temp"',Tags:["temp","tektike"]}
