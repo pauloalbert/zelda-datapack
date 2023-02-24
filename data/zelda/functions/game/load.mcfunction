@@ -1,3 +1,4 @@
+
 #scoreboard objectives remove Hunger
 scoreboard objectives add Hunger food
 scoreboard players set #6 constant 6

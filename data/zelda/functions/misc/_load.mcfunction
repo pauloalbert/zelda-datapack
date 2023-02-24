@@ -5,3 +5,6 @@ scoreboard objectives add misc_x dummy
 scoreboard objectives add misc_y dummy
 scoreboard objectives add misc_z dummy
 scoreboard objectives add misc_d dummy
+
+#scoreboard objectives add misc dummy
+#general purpose input output^
