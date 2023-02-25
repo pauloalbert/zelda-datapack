@@ -8,7 +8,7 @@ execute positioned ~-0.7 ~-0.2 ~-0.7 as @e[tag=hurt_b_filter,tag=hurt_a_filter, 
 
 #Practically tag @e remove filters (optimized-ish)
 execute positioned ~-0.7 ~-0.2 ~-0.7 run tag @e[dx=1,dy=1,dz=1] remove hurt_a_filter
-execute positioned ~-0.7 ~-0.2 ~-0.7 run tag @e[dx=1,dy=1,dz=1] remove hurt_a_filter
+execute positioned ~-0.7 ~-0.2 ~-0.7 run tag @e[dx=1,dy=1,dz=1] remove hurt_b_filter
 tag @s remove player_damage_filter
 
 #tellraw pauloalbert {"text":"dookie"}
