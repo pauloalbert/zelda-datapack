@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "nbt": "data.message_slice",
+      "entity": "@s",
+      "interpret": true
+    }
+  }
+]
