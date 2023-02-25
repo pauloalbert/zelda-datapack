@@ -17,6 +17,7 @@ scoreboard objectives add behavior0 dummy
 
 ###Player
 scoreboard objectives add Hunger food
+scoreboard objectives add MaxHealth dummy
 
 #Misc (load every refresh)
 function zelda:misc/_load
