@@ -1,5 +1,7 @@
 #Player config:
 execute as @a[tag=player] run function zelda:game/effects/health_attribute
+execute as @a[tag=player] run function zelda:game/effects/defence_attribute
+
 #effects
 function zelda:game/effects/hunger
 function zelda:game/effects/constant_effects

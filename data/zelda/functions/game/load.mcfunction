@@ -1,5 +1,6 @@
 
 ###CONSTANTS
+scoreboard players set #0 constant 0
 scoreboard players set #1 constant 1
 scoreboard players set #2 constant 2
 scoreboard players set #4 constant 4
@@ -18,6 +19,7 @@ scoreboard objectives add behavior0 dummy
 ###Player
 scoreboard objectives add Hunger food
 scoreboard objectives add MaxHealth dummy
+scoreboard objectives add RingLevel dummy
 
 #Misc (load every refresh)
 function zelda:misc/_load
