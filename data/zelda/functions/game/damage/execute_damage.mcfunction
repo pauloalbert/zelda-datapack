@@ -1,0 +1,1 @@
+execute as @a[tag=player] at @s run function zelda:game/damage/check_for_damage
