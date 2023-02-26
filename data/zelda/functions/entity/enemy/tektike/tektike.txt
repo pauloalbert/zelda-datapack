@@ -1,0 +1,14 @@
+Information about tektikes:
+damage = 0.5 (1)
+health = 0.5 (1)
+
+drops = group A
+
+
+behavior0: height jump, local argument
+
+States:
+    -1: frozen
+    0: idle
+    1: jumping
+    2: shorthopping?
