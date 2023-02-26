@@ -13,6 +13,8 @@ scoreboard players set #16 constant 16
 scoreboard objectives add Direction dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add Damage dummy
+scoreboard objectives add State dummy
+scoreboard objectives add AnimationTimer custom:time_since_death
 
 scoreboard objectives add behavior0 dummy
 
