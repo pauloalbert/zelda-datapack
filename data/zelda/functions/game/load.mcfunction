@@ -1,5 +1,6 @@
 
 ###CONSTANTS
+scoreboard players set #-1 constant -1
 scoreboard players set #0 constant 0
 scoreboard players set #1 constant 1
 scoreboard players set #2 constant 2
