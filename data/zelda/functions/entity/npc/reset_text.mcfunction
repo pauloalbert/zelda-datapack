@@ -9,6 +9,6 @@ execute as @e[type=marker,tag=message_controller] run data modify entity @s data
 execute as @e[type=marker,tag=message_controller] at @s run setblock ~ ~-6 ~ stone
 execute as @e[type=marker,tag=message_controller] at @s run setblock ~ ~-6 ~ chest{Items:[{Slot:0b,id:"book",Count:1b}]}
 execute as @e[type=marker,tag=message_controller] at @s run summon text_display ~ ~ ~ {Tags:["message_display"],billboard:"fixed",Rotation:[90f,0f]}
-execute as @e[type=marker,tag=message_controller] at @s run data merge entity @e[type=text_display,tag=message_display,sort=nearest,limit=1] {transformation:{scale:[1.5f,1.5f,1.5f]}}
+execute as @e[type=marker,tag=message_controller] at @s run data merge entity @e[type=text_display,tag=message_display,sort=nearest,limit=1] {transformation:{scale:[2.25f,2.25f,2.25f]},line_width:120}
 
 
