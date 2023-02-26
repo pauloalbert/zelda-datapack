@@ -1,0 +1,1 @@
+advancement revoke @s only trackers:shield

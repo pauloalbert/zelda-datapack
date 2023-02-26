@@ -1,0 +1,12 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:used_totem",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "trackers:used_totem"
+    }
+  }
+  

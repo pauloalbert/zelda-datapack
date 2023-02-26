@@ -17,4 +17,4 @@ function zelda:game/damage/execute_enemy_damage
 function zelda:game/damage/execute_damage
 
 #Control enemies
-function zelda:game/call_enemies
+#function zelda:game/call_enemies
