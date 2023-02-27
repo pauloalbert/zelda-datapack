@@ -23,6 +23,7 @@ scoreboard objectives add behavior0 dummy
 scoreboard objectives add Hunger food
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add RingLevel dummy
+scoreboard objectives add raycast_recursion dummy
 
 #controlled by do damage
 scoreboard objectives add health_wrong deathCount
