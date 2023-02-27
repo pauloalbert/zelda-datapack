@@ -12,9 +12,9 @@ function zelda:game/effects/constant_effects
 
 
 #Damage enemies
-function zelda:game/damage/execute_enemy_damage
+function zelda:player/damage/execute_enemy_damage
 #Player damage
-function zelda:game/damage/execute_damage
+function zelda:player/damage/execute_damage
 
 #Control enemies
 #function zelda:game/call_enemies
