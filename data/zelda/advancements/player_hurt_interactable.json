@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "zelda:player/damage/player_atack"
+      "function": "zelda:player/player_attack"
     }
   }
   
