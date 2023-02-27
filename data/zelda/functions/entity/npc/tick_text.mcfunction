@@ -1,4 +1,4 @@
-data modify entity @s data.message_slice append string entity @s data.message_end 0 1
+execute store success score @s behavior0 run data modify entity @s data.message_slice append string entity @s data.message_end 0 1
 data modify entity @s data.message_end set string entity @s data.message_end 1
 
 #Convert the array of letters into a string using an item (I know, its fucking stupid)
