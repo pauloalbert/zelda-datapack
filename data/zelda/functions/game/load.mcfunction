@@ -24,6 +24,8 @@ scoreboard objectives add Hunger food
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add RingLevel dummy
 
+#controlled by do damage
+scoreboard objectives add health_wrong deathCount
 #Misc (load every refresh)
 function zelda:misc/_load
 function zelda:entity/enemy/_load
