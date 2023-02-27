@@ -15,7 +15,8 @@ scoreboard objectives add Direction dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add Damage dummy
 scoreboard objectives add State dummy
-scoreboard objectives add AnimationTimer custom:time_since_death
+scoreboard objectives add AnimationTimer dummy
+scoreboard objectives add HurtTimer dummy
 
 scoreboard objectives add behavior0 dummy
 
