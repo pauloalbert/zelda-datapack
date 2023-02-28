@@ -14,7 +14,7 @@ scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant1 -18
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant2 40
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant3 100
 #Jump max jump min timer
-scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant4 1
-scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant5 50
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant4 40
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant5 130
 
 tag @s remove SPAWN_TEMP

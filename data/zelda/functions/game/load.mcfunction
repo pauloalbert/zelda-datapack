@@ -22,6 +22,8 @@ scoreboard objectives add HurtTimer dummy
 
 scoreboard objectives add behavior0 dummy
 scoreboard objectives add behavior1 dummy
+scoreboard objectives add behavior2 dummy
+scoreboard objectives add behavior3 dummy
 scoreboard objectives add EnemyConstant0 dummy
 scoreboard objectives add EnemyConstant1 dummy
 scoreboard objectives add EnemyConstant2 dummy
