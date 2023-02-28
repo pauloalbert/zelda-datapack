@@ -6,8 +6,6 @@ scoreboard players set #1 constant 1
 scoreboard players set #2 constant 2
 scoreboard players set #4 constant 4
 scoreboard players set #6 constant 6
-scoreboard players set #8 constant 8
-scoreboard players set #16 constant 16
 
 ###GAME CONSTANTS
 scoreboard objectives add zelda_constant dummy
@@ -23,6 +21,14 @@ scoreboard objectives add AnimationTimer dummy
 scoreboard objectives add HurtTimer dummy
 
 scoreboard objectives add behavior0 dummy
+scoreboard objectives add behavior1 dummy
+scoreboard objectives add EnemyConstant0 dummy
+scoreboard objectives add EnemyConstant1 dummy
+scoreboard objectives add EnemyConstant2 dummy
+scoreboard objectives add EnemyConstant3 dummy
+scoreboard objectives add EnemyConstant4 dummy
+scoreboard objectives add EnemyConstant5 dummy
+
 
 ###Player
 scoreboard objectives add Hunger food

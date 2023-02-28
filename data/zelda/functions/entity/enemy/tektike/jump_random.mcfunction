@@ -1,8 +1,8 @@
 #run by tektite at @s,
 
 #Set animation timer randomly:
-scoreboard players set in math -50
-scoreboard players set in1 math -13
+scoreboard players operation in math = @s EnemyConstant0
+scoreboard players operation in1 math = @s EnemyConstant1
 function math:rng/range
 scoreboard players operation @s AnimationTimer = out math
 
@@ -17,12 +17,19 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 
 #random jump height
 #get random direction
-scoreboard players set in math 30
-scoreboard players set in1 math 80
+scoreboard players operation in math = @s EnemyConstant2
+scoreboard players operation in1 math = @s EnemyConstant3
 function math:rng/range
 scoreboard players operation @s behavior0 = out math
 
-###jump_forward(Direction, behavior0)
+#random jump height
+#get random direction
+scoreboard players operation in math = @s EnemyConstant4
+scoreboard players operation in1 math = @s EnemyConstant5
+function math:rng/range
+scoreboard players operation @s behavior1 = out math
+
+###jump_forward(Direction, behavior0, behavior1)
 execute as @s at @s run function zelda:entity/enemy/tektike/jump_forward
 
 #Rotate display and hitbox to match armor stand

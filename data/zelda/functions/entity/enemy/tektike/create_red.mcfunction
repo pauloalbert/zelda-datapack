@@ -6,4 +6,15 @@ scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] Health 1
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] Damage 1
 execute as @e[distance=..1,tag=SPAWN_TEMP] on passengers if entity @s[tag=hitbox] run scoreboard players set @s Damage 1
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] State 0
+
+#Jump max jump min timer
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant0 -40
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant1 -13
+#Jump max jump min timer
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant2 30
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant3 75
+#Jump max jump min timer
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant4 1
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant5 100
+
 tag @s remove SPAWN_TEMP
