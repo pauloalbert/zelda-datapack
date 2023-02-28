@@ -1,5 +1,11 @@
 #run by tektite at @s,
 
+#Set animation timer randomly:
+scoreboard players set in math -50
+scoreboard players set in1 math -13
+function math:rng/range
+scoreboard players operation @s AnimationTimer = out math
+
 #get random direction
 scoreboard players set in math 0
 scoreboard players set in1 math 359
@@ -11,7 +17,7 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get @s
 
 #random jump height
 #get random direction
-scoreboard players set in math 40
+scoreboard players set in math 30
 scoreboard players set in1 math 80
 function math:rng/range
 scoreboard players operation @s behavior0 = out math

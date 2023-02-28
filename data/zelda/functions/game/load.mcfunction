@@ -9,6 +9,10 @@ scoreboard players set #6 constant 6
 scoreboard players set #8 constant 8
 scoreboard players set #16 constant 16
 
+###GAME CONSTANTS
+scoreboard objectives add zelda_constant dummy
+scoreboard players set #ENEMY_HURT_TIME zelda_constant -10
+
 ###Enemies
 #Camel case = these are respected non-volatile variables of the enemy.
 scoreboard objectives add Direction dummy
