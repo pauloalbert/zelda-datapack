@@ -7,7 +7,10 @@ function zelda:game/effects/constant_effects
 
 
 #Game Shit
-scoreboard players add @e[tag=controller] AnimationTimer 1
+execute if score GAME Freeze matches 2.. run scoreboard players remove GAME Freeze 1
+execute if score GAME Freeze matches 1 run function zelda:entity/item/freeze/stop_freeze
+
+execute if score GAME Freeze matches 0 as @e[tag=controller] unless score @s StunTimer matches ..-1 run scoreboard players add @s AnimationTimer 1
 scoreboard players add @e[tag=controller] HurtTimer 1
 
 
