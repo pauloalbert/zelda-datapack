@@ -12,7 +12,7 @@ scoreboard players add @e[tag=controller] HurtTimer 1
 
 
 tag @e[type=interaction, tag=headbox] remove headbox_taken_filter
-execute as @a[tag=player] at @s anchored eyes run function zelda:game/headbox_tp
+execute as @a[tag=player,gamemode=!creative] at @s anchored eyes run function zelda:game/headbox_tp
 
 
 #Damage enemies
@@ -21,4 +21,4 @@ function zelda:player/damage/execute_enemy_damage
 function zelda:player/damage/execute_damage
 
 #Control enemies
-#function zelda:game/call_enemies
+function zelda:game/call_enemies
