@@ -1,4 +1,4 @@
-Information about tektikes:
+Information about tektites:
 damage = 0.5 (1)
 health = 0.5 (1)
 

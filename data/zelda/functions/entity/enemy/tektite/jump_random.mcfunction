@@ -30,7 +30,7 @@ function math:rng/range
 scoreboard players operation @s behavior1 = out math
 
 ###jump_forward(Direction, behavior1, behavior2)
-execute as @s at @s run function zelda:entity/enemy/tektike/jump_forward
+execute as @s at @s run function zelda:entity/enemy/tektite/jump_forward
 
 #Rotate display and hitbox to match armor stand
 tag @s add passenger_filter
