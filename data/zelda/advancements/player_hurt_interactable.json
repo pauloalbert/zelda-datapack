@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "#zelda:player_attackable"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "zelda:player/player_attack"
+    }
+  }
+  

@@ -9,13 +9,18 @@ scoreboard players set #6 constant 6
 scoreboard players set #8 constant 8
 scoreboard players set #16 constant 16
 
+###GAME CONSTANTS
+scoreboard objectives add zelda_constant dummy
+scoreboard players set #ENEMY_HURT_TIME zelda_constant -10
+
 ###Enemies
 #Camel case = these are respected non-volatile variables of the enemy.
 scoreboard objectives add Direction dummy
 scoreboard objectives add Health dummy
 scoreboard objectives add Damage dummy
 scoreboard objectives add State dummy
-scoreboard objectives add AnimationTimer custom:time_since_death
+scoreboard objectives add AnimationTimer dummy
+scoreboard objectives add HurtTimer dummy
 
 scoreboard objectives add behavior0 dummy
 
@@ -23,6 +28,8 @@ scoreboard objectives add behavior0 dummy
 scoreboard objectives add Hunger food
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add RingLevel dummy
+scoreboard objectives add raycast_recursion dummy
+scoreboard objectives add AttackTimer custom:time_since_rest
 
 #controlled by do damage
 scoreboard objectives add health_wrong deathCount
