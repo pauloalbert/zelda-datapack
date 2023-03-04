@@ -6,6 +6,8 @@ function zelda:game/effects/hunger
 function zelda:game/effects/constant_effects
 
 
+execute as @e[tag=player,gamemode=adventure] at @s run function zelda:game/temp_player_checks
+
 #Game Shit
 execute if score GAME Freeze matches 2.. run scoreboard players remove GAME Freeze 1
 execute if score GAME Freeze matches 1 run function zelda:entity/item/freeze/stop_freeze
@@ -15,7 +17,7 @@ scoreboard players add @e[tag=controller] HurtTimer 1
 
 
 tag @e[type=interaction,tag=headbox] remove headbox_taken
-execute as @a[tag=player,gamemode=!creative] at @s anchored eyes positioned ^ ^ ^ run function zelda:game/headbox_tp
+execute as @a[tag=player,gamemode=adventure] at @s anchored eyes positioned ^ ^ ^ run function zelda:game/headbox_tp
 kill @e[type=interaction,tag=headbox,tag=!headbox_taken]
 
 #Damage enemies
