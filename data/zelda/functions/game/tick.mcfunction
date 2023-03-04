@@ -26,4 +26,5 @@ function zelda:player/damage/execute_enemy_damage
 function zelda:player/damage/execute_damage
 
 #Control enemies
+function zelda:game/call_projectiles
 function zelda:game/call_enemies
