@@ -17,4 +17,5 @@ scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant3 100
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant4 40
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] EnemyConstant5 130
 
-tag @s remove SPAWN_TEMP
+execute as @e[distance=..1,tag=SPAWN_TEMP] run function zelda:entity/enemy/tektite/render
+tag @e[distance=..1,tag=SPAWN_TEMP] remove SPAWN_TEMP
