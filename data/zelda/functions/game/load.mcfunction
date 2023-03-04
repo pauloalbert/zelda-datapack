@@ -6,6 +6,8 @@ scoreboard players set #1 constant 1
 scoreboard players set #2 constant 2
 scoreboard players set #4 constant 4
 scoreboard players set #6 constant 6
+scoreboard players set #99 constant 99
+scoreboard players set #100 constant 100
 
 ###GAME CONSTANTS
 scoreboard objectives add zelda_constant dummy
@@ -43,6 +45,9 @@ scoreboard objectives add MaxHealth dummy
 scoreboard objectives add RingLevel dummy
 scoreboard objectives add raycast_recursion dummy
 scoreboard objectives add AttackTimer custom:time_since_rest
+scoreboard objectives add SuperAttackTimer custom:time_since_rest
+scoreboard objectives add PlayerHealth health
+scoreboard objectives add RoundedHealth dummy
 
 #controlled by do damage
 scoreboard objectives add health_wrong deathCount
