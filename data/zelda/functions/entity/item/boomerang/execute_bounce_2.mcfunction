@@ -1,6 +1,6 @@
 particle ambient_entity_effect
 playsound zelda:item/bounce master @a ~ ~ ~
-
+execute unless block ~ ~ ~ air run tellraw @a[tag=debugger] {"text": "IN A BLOCK"}
 execute store result score @s behavior2 run data get entity @s Rotation[0] 100
 execute store result score @s behavior3 run data get entity @s Rotation[1] 100
 
