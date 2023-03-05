@@ -12,6 +12,7 @@ execute as @e[tag=player,gamemode=adventure] at @s run function zelda:game/temp_
 execute if score GAME Freeze matches 2.. run scoreboard players remove GAME Freeze 1
 execute if score GAME Freeze matches 1 run function zelda:entity/item/freeze/stop_freeze
 
+scoreboard players add @e[tag=boomerang] AnimationTimer 1
 execute if score GAME Freeze matches 0 as @e[tag=controller] unless score @s StunTimer matches ..-1 run scoreboard players add @s AnimationTimer 1
 scoreboard players add @e[tag=controller] HurtTimer 1
 
@@ -28,3 +29,5 @@ function zelda:player/damage/execute_damage
 #Control enemies
 function zelda:game/call_projectiles
 function zelda:game/call_enemies
+
+execute as @e[tag=boomerang] at @s run function zelda:entity/item/boomerang/execute

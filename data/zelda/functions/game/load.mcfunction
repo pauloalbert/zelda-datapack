@@ -8,6 +8,7 @@ scoreboard players set #4 constant 4
 scoreboard players set #6 constant 6
 scoreboard players set #99 constant 99
 scoreboard players set #100 constant 100
+scoreboard players set #18000 constant 18000
 
 ###GAME ZELDA CONSTANTS
 scoreboard objectives add zelda_constant dummy
