@@ -1,0 +1,17 @@
+execute: chooses if the boomerang is moving forward or to the player (execute_normal/execute_return)
+        behavior1 - animationcounter for the rotating boomerang
+
+
+execute_return: gets the location of the player with the same id, moves facing towards HurtTimer
+
+execute_normal: 
+                checks if the next jump bounces, if so call (execute_bounce) if not move forward
+
+execute_bounce: runs until behavior0 is 0:
+    while(behavior0=0..)
+        if(block.north()||south()) flip NS
+        if(block.east()) flip EW
+        if(block.up()||block.down()) flip UD
+    behavior--
+    move forward
+
