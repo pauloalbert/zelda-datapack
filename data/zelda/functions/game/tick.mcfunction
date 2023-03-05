@@ -14,6 +14,7 @@ execute if score GAME Freeze matches 1 run function zelda:entity/item/freeze/sto
 
 scoreboard players add @e[tag=boomerang] AnimationTimer 1
 execute if score GAME Freeze matches 0 as @e[tag=controller] unless score @s StunTimer matches ..-1 run scoreboard players add @s AnimationTimer 1
+execute as @e[tag=controller] run scoreboard players add @s StunTimer 1
 scoreboard players add @e[tag=controller] HurtTimer 1
 
 
