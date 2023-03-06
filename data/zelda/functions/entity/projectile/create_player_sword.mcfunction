@@ -3,5 +3,5 @@ execute positioned ~ ~ ~ rotated as @s run tp @e[tag=TEMP_SPAWN] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=TEMP_SPAWN] Damage 1
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:stone_sword"}}] run scoreboard players set @e[tag=TEMP_SPAWN] Damage 2
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:iron_sword"}}] run scoreboard players set @e[tag=TEMP_SPAWN] Damage 4
-
+scoreboard players set @e[tag=TEMP_SPAWN] behavior0 20
 tag @e remove TEMP_SPAWN
