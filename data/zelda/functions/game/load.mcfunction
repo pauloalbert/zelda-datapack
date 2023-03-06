@@ -8,10 +8,12 @@ scoreboard players set #4 constant 4
 scoreboard players set #6 constant 6
 scoreboard players set #99 constant 99
 scoreboard players set #100 constant 100
+scoreboard players set #18000 constant 18000
 
-###GAME CONSTANTS
+###GAME ZELDA CONSTANTS
 scoreboard objectives add zelda_constant dummy
 scoreboard players set #ENEMY_HURT_TIME zelda_constant -10
+scoreboard players set #BOOMERANGS_BOUNCE zelda_constant 1
 
 ###Game variables
 scoreboard objectives add Freeze dummy
@@ -49,6 +51,7 @@ scoreboard objectives add SuperAttackTimer custom:time_since_rest
 scoreboard objectives add PlayerHealth health
 scoreboard objectives add RoundedHealth dummy
 
+scoreboard objectives add boomerang_id dummy
 #controlled by do damage
 scoreboard objectives add health_wrong deathCount
 #Misc (load every refresh)
