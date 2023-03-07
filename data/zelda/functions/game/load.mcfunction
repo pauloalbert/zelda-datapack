@@ -18,6 +18,7 @@ scoreboard players set #BOOMERANGS_BOUNCE zelda_constant 1
 ###Game variables
 scoreboard objectives add Freeze dummy
 scoreboard objectives add Dungeon1Beaten dummy
+scoreboard objectives add BoomerangIDCount dummy
 
 ###Enemies
 #Camel case = these are respected non-volatile variables of the enemy.
