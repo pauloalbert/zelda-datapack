@@ -1,0 +1,3 @@
+armos_blocks: blocks that can turn into armos.
+
+walkable_blocks: these are blocks that enemies can continue walking to.
