@@ -25,7 +25,7 @@ kill @e[type=interaction,tag=headbox,tag=!headbox_taken]
 #Damage enemies
 function zelda:player/damage/execute_enemy_damage
 #Player damage
-function zelda:player/damage/execute_damage
+function zelda:player/damage/_damage
 
 #Control enemies
 function zelda:game/call_projectiles
