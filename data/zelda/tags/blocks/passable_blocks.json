@@ -1,6 +1,6 @@
 {
     "values": [
-      "#zelda:floor",
+      "minecraft:void_air",
       "minecraft:air",
       "#minecraft:buttons",
       "#minecraft:signs",

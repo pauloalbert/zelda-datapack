@@ -9,6 +9,6 @@ tag @s remove player_hitting_filter
 execute as @s run function zelda:player/caclulate_rounded_health
 execute as @s[scores={SuperAttackTimer=0..}] positioned ^ ^ ^ if score @s raycast_recursion matches 0 if score @s RoundedHealth >= @s MaxHealth run function zelda:player/do_super_attack
 
-execute as @s unless block ^ ^ ^0.05 #zelda:walkable_blocks run particle crit
+execute as @s unless block ^ ^ ^0.05 #zelda:passable_blocks run particle crit
 scoreboard players remove @s raycast_recursion 1
-execute as @s positioned ^ ^ ^0.05 if score @s raycast_recursion matches 0.. if block ~ ~ ~ #zelda:walkable_blocks run function zelda:player/raycast
+execute as @s positioned ^ ^ ^0.05 if score @s raycast_recursion matches 0.. if block ~ ~ ~ #zelda:passable_blocks run function zelda:player/raycast

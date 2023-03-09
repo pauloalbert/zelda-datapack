@@ -4,8 +4,8 @@
 scoreboard players set @s behavior0 50
 
 
-execute unless block ^ ^ ^0.5 air if score #BOOMERANGS_BOUNCE zelda_constant matches 1 run function zelda:item/boomerang/execute_bounce
-execute unless block ^ ^ ^0.5 air if score #BOOMERANGS_BOUNCE zelda_constant matches 0 run scoreboard players set @s AnimationTimer 0
+execute unless block ^ ^ ^0.5 passable_blocks if score #BOOMERANGS_BOUNCE zelda_constant matches 1 run function zelda:item/boomerang/execute_bounce
+execute unless block ^ ^ ^0.5 passable_blocks if score #BOOMERANGS_BOUNCE zelda_constant matches 0 run scoreboard players set @s AnimationTimer 0
 
 execute if score @s State matches 0 run tp @s ^ ^ ^0.5
 
