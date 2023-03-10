@@ -5,7 +5,7 @@
 execute if score @s State matches 1 run function zelda:entity/enemy/armos/waking_up
 
 #do extra steps if fast
-execute if entity @s[tag=fast] if score @s State matches 0 run scoreboard players add @s AnimationTimer 1
+execute if entity @s[tag=fast] if score @s State matches 0 run scoreboard players add @s AnimationTimer 2
 execute if entity @s[tag=fast] if score @s State matches 0 if score @s AnimationTimer matches ..-1 run function zelda:entity/enemy/armos/step_forward_fast
 
 #Move forward/decide if to turn.
