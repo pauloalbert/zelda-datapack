@@ -9,3 +9,5 @@ scoreboard players operation @e[distance=..2,tag=SPAWN_TEMP] boomerang_id = GAME
 scoreboard players operation @s boomerang_id = GAME BoomerangIDCount
 data modify entity @e[tag=SPAWN_TEMP,limit=1,sort=nearest] Rotation set from entity @s Rotation
 tag @e[distance=..2] remove SPAWN_TEMP
+
+tellraw @a[tag=debugger] [{"text":"Shot red, id: "},{"score":{"name":"GAME","objective":"BoomerangIDCount"}}]

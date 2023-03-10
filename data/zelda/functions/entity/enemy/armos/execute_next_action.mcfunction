@@ -3,6 +3,7 @@
 #doesn't move on turnaround frame, so in next it will be -10 so 10 steps
 scoreboard players set @s AnimationTimer -11
 
+#Roll a number from 1-10 to choose how frequently the armos turns naturally
 scoreboard players set in math 1
 scoreboard players set in1 math 10
 function math:rng/range
