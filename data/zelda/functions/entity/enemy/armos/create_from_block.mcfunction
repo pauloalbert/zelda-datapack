@@ -22,4 +22,7 @@ scoreboard players set @e[distance=..2,tag=SPAWN_TEMP] Health 3
 scoreboard players set @e[distance=..2,tag=SPAWN_TEMP] Damage 2
 execute as @e[distance=..2,tag=SPAWN_TEMP] on passengers if entity @s[tag=hitbox] run scoreboard players set @s Damage 2
 execute as @e[distance=..2,tag=SPAWN_TEMP] run function zelda:entity/enemy/armos/render
+
+#Armos randomly can be fast
+execute if predicate zelda:third run tag @e[distance=..2,tag=SPAWN_TEMP] add fast
 tag @e[distance=..2] remove SPAWN_TEMP
