@@ -10,7 +10,7 @@
       }
     },
     "rewards": {
-      "function": "zelda:player/attack/left_click"
+      "function": "zelda:advancement/player_hit_interaction"
     }
   }
   
