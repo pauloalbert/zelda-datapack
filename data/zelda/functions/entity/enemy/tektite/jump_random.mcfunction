@@ -15,19 +15,18 @@ scoreboard players operation in math = @s Direction
 
 execute store result entity @s Rotation[0] float 1 run scoreboard players get @s Direction
 
+#random distance magnitude
+scoreboard players operation in math = @s EnemyConstant4
+scoreboard players operation in1 math = @s EnemyConstant5
+function math:rng/range
+scoreboard players operation @s behavior1 = out math
+
 #random jump height
-#get random direction
 scoreboard players operation in math = @s EnemyConstant2
 scoreboard players operation in1 math = @s EnemyConstant3
 function math:rng/range
 scoreboard players operation @s behavior2 = out math
 
-#random jump height
-#get random direction
-scoreboard players operation in math = @s EnemyConstant4
-scoreboard players operation in1 math = @s EnemyConstant5
-function math:rng/range
-scoreboard players operation @s behavior1 = out math
 
 ###jump_forward(Direction, behavior1, behavior2)
 execute as @s at @s run function zelda:entity/enemy/tektite/jump_forward
