@@ -1,5 +1,5 @@
 ###Run as entity
-###Called by handle_movement
+###Called by execute
 ###Faces nearest player and jumps a random amount
 tp @s ~ ~ ~ facing entity @p[tag=player]
 execute store result score @s Direction run data get entity @s Rotation[0]
