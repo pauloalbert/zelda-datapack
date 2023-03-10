@@ -1,4 +1,8 @@
-#r
+###Create red tektike at current location
+#Enemy constants:
+#1-2: Animation time for jump
+#3-4: height range
+#5-6: distance range
 summon armor_stand ~ ~ ~ {CustomName:'"red tektite"',Invisible:1b, Small:1b, Tags:["tektite","controller","red","enemy","SPAWN_TEMP","TYPE_A"],Passengers:[{id:"item_display",Tags:["tektite","display","red","enemy"]}, {id:"interaction",CustomName:'"killed by red tektite"',Tags:["tektite","hitbox","red","hurts_player","enemy"]}]}
 
 #Define stats:
