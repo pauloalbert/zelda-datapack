@@ -8,8 +8,8 @@ execute positioned ^ ^ ^0.8 as @e[tag=enemy,tag=hitbox,dx=0] positioned ~-0.7 ~-
 execute if score GAME Damage = #0 constant run kill @s
 execute if score GAME Damage = #0 constant run particle sonic_boom
 tp @s ^ ^ ^1
-execute unless block ~ ~ ~ #zelda:air run kill @s
-execute unless block ~ ~ ~ #zelda:air run particle sonic_boom ^ ^ ^-1 
+execute unless block ~ ~ ~ #zelda:passable_blocks run kill @s
+execute unless block ~ ~ ~ #zelda:passable_blocks run particle sonic_boom ^ ^ ^-1 
 execute if score @s AnimationTimer > @s behavior0 run particle sonic_boom
 execute if score @s AnimationTimer > @s behavior0 run kill @s
 #tellraw @a[tag=debugger] {"score":{"name":"@s","objective":"Damage"}}

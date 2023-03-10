@@ -1,6 +1,8 @@
 {
     "values": [
-      "#minecraft:wool_carpets"
+      "#minecraft:wool_carpets",
+      "spruce_trapdoor",
+      "dark_oak_trapdoor"
     ]
   }
   

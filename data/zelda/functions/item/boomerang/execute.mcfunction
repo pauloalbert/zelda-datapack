@@ -5,8 +5,8 @@ execute positioned ~-0.6 ~-0.85 ~-0.6 as @e[dx=0,tag=boomerang_stun_filter] on v
 tag @e[distance=..2,tag=enemy] remove boomerang_stun_filter
 
 execute if score @s AnimationTimer matches 0.. run scoreboard players set @s State 1
-execute if score @s State matches 0 run function zelda:entity/item/boomerang/execute_normal
-execute if score @s State matches 1 run function zelda:entity/item/boomerang/execute_return
+execute if score @s State matches 0 run function zelda:item/boomerang/execute_normal
+execute if score @s State matches 1 run function zelda:item/boomerang/execute_return
 
 #animation
 execute if entity @s run scoreboard players operation @s behavior2 = @s AnimationTimer

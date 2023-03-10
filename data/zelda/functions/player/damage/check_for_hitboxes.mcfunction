@@ -1,4 +1,6 @@
-###executed as player.
+###executed as player at player
+###Called by _damage
+###Calls do_damage
 
 tag @s add player_damage_filter
 #create two hitboxes around the player, see if any entity resides in both.

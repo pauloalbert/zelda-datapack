@@ -1,8 +1,9 @@
 ###This function returns the pos to the nearest player.
+###Modifies: @s misc_x misc_y misc_z, misc_d
 
 #Prerequisites: run as entity getting the direction.
 
-#return: nearestPlayerArguments for player's [gNPX, gNPY, gNPZ] for [dx,dy,dz] respectively, saved under the entity which called the func
+#return: nearestPlayerArguments for player's [misc_x, misc_y, misc_z] for [dx,dy,dz] respectively, saved under the entity which called the func
 execute store result score @s misc_x run data get entity @s Pos[0] 100
 execute store result score @s misc_y run data get entity @s Pos[1] 100
 execute store result score @s misc_z run data get entity @s Pos[2] 100
