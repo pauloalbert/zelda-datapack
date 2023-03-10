@@ -16,7 +16,7 @@ scoreboard players operation in math = @s EnemyConstant2
 scoreboard players operation in1 math = @s EnemyConstant3
 function math:rng/range
 scoreboard players operation @s behavior2 = out math
-scoreboard players set @s AnimationTimer -40
+scoreboard players set @s AnimationTimer -35
 
 ###jump_forward(Direction, behavior1, behavior2)
 execute as @s at @s run function zelda:entity/enemy/tektite/jump_forward
