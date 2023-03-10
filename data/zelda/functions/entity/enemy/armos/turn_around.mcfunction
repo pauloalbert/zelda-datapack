@@ -1,6 +1,6 @@
 scoreboard players set in1 math -1
 scoreboard players set in math 0
-
+#execute if score out math matches 6..10 run say forced rotate
 execute if block ~ ~ ~1 #zelda:floor if block ~ ~1 ~1 #zelda:passable_blocks run scoreboard players add in1 math 1
 execute if block ~ ~ ~-1 #zelda:floor if block ~ ~1 ~-1 #zelda:passable_blocks run scoreboard players add in1 math 1
 execute if block ~-1 ~ ~ #zelda:floor if block ~-1 ~1 ~ #zelda:passable_blocks run scoreboard players add in1 math 1
