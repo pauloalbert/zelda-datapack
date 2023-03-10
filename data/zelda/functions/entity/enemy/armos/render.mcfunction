@@ -1,8 +1,12 @@
 ###Point here is to make the block/item_display show the proper model at the correct angle.
-execute if score @s State matches 0 on passengers if entity @s[tag=display] run data merge entity @s {block_state:{Name:"end_stone_bricks"},transformation:{scale:[1f, 1f, 1f],translation:[-0.5f,0.3f,-0.5f],left_rotation:[0f,0f,0f,1f]}}
+
+#Calculate modulo for waking up animation
 scoreboard players operation @s behavior1 = @s AnimationTimer
 scoreboard players operation @s behavior1 /= #4 constant
 scoreboard players operation @s behavior1 %= #2 constant
+
+#Make sure the display has a moving armos and not a stationary one
+execute if score @s State matches 0 on passengers if entity @s[tag=display] run data merge entity @s {block_state:{Name:"end_stone_bricks"},transformation:{scale:[1f, 1f, 1f],translation:[-0.5f,0.3f,-0.5f],left_rotation:[0f,0f,0f,1f]}}
 
 execute if score @s State matches 1 if score @s behavior1 matches 0 on passengers if entity @s[tag=display] run data merge entity @s {block_state:{Name:"end_stone_bricks"},transformation:{scale:[1f, 1f, 1f],translation:[-0.5f,0.3f,-0.5f],left_rotation:[0f,0f,0f,1f]}}
 execute if entity @s[tag=red] if score @s State matches 1 if score @s behavior1 matches 1 on passengers if entity @s[tag=display] run data merge entity @s {block_state:{Name:"bricks"},transformation:{scale:[1f, 1f, 1f],translation:[-0.5f,0.3f,-0.5f],left_rotation:[0f,0f,0f,1f]}}

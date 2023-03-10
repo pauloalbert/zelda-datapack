@@ -1,8 +1,15 @@
 ###Called by call_enemies
 ###Runs movement and choosing next state
 
-execute if score @s AnimationTimer matches 0.. if score @s State matches 1 run scoreboard players set @s State 0
-execute unless score @s AnimationTimer matches 0.. if score @s State matches 0 run function zelda:entity/enemy/armos/walk_forward
-execute if score @s AnimationTimer matches 0.. run function zelda:entity/enemy/armos/turn_around
-execute if score @s AnimationTimer matches 0.. run scoreboard players set @s AnimationTimer -11
+#Run while waking up
+execute if score @s State matches 1 run function zelda:entity/enemy/armos/waking_up
+
+#do extra steps if fast
+execute if entity @s[tag=fast] if score @s State matches 0 run scoreboard players add @s AnimationTimer 1
+execute if entity @s[tag=fast] if score @s State matches 0 if score @s AnimationTimer matches ..-1 run function zelda:entity/enemy/armos/step_forward
+
+#Move forward/decide if to turn.
+execute if score @s State matches 0 if score @s AnimationTimer matches ..-1 run function zelda:entity/enemy/armos/step_forward
+execute if score @s State matches 0 unless score @s AnimationTimer matches ..-1 run function zelda:entity/enemy/armos/execute_next_action
+
 function zelda:entity/enemy/armos/render

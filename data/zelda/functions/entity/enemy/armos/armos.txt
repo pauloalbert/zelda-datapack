@@ -1,0 +1,14 @@
+State:
+    0 - normal walking
+    1 - waking up (i wipe my ass and i slap my nuts)
+
+* The fast armos lets his animation timer run twice as fast
+
+No EnemyConstants
+
+behavior0: which direction going, absolute
+behavior1: used by (render) as a modulo for the waking up animation
+
+Behaviors:
+- Kills self if in a block (turn_around)
+- Always moves in full blocks
