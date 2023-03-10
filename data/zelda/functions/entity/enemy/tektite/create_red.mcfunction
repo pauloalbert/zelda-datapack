@@ -6,6 +6,7 @@
 summon armor_stand ~ ~ ~ {CustomName:'"red tektite"',Invisible:1b, Small:1b, Tags:["tektite","controller","red","enemy","SPAWN_TEMP","TYPE_A"],Passengers:[{id:"item_display",Tags:["tektite","display","red","enemy"]}, {id:"interaction",CustomName:'"killed by red tektite"',Tags:["tektite","hitbox","red","hurts_player","enemy"]}]}
 
 #Define stats:
+scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] AnimationTimer -20
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] Health 1
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] Damage 1
 execute as @e[distance=..1,tag=SPAWN_TEMP] on passengers if entity @s[tag=hitbox] run scoreboard players set @s Damage 1
