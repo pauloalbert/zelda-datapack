@@ -1,5 +1,5 @@
 
-#scoreboard players set @s State -1
+scoreboard players set @s State -1
 
 execute unless block ^ ^ ^0.01 #zelda:passable_blocks run function zelda:item/boomerang/execute_bounce_2
 #tellraw @a[tag=debugger] {"score":{"name":"@s","objective":"behavior0"}}
