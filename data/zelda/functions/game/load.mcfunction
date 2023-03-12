@@ -41,6 +41,8 @@ scoreboard objectives add EnemyConstant3 dummy
 scoreboard objectives add EnemyConstant4 dummy
 scoreboard objectives add EnemyConstant5 dummy
 
+### Projectiles
+scoreboard objectives add BlockLevel dummy
 
 ### Player
 scoreboard objectives add Hunger food
@@ -51,6 +53,8 @@ scoreboard objectives add AttackTimer custom:time_since_rest
 scoreboard objectives add SuperAttackTimer custom:time_since_rest
 scoreboard objectives add PlayerHealth health
 scoreboard objectives add RoundedHealth dummy
+
+scoreboard objectives add ShieldLevel dummy
 
 scoreboard objectives add boomerang_id dummy
 #controlled by do damage

@@ -1,7 +1,7 @@
 ###Create red octorok at current location
 #Enemy constants:
 
-summon armor_stand ~ ~ ~ {CustomName:'"red octorok"',Invisible:1b, Small:1b, Tags:["octorok","controller","red","enemy","SPAWN_TEMP","TYPE_A","ANIMATED","STUNNABLE"],Passengers:[{id:"item_display",Tags:["octorok","display","red","enemy"]}, {id:"interaction",CustomName:'"killed by red octorok"',Tags:["octorok","hitbox","red","hurts_player","enemy"]}]}
+summon armor_stand ~ ~ ~ {CustomName:'"red octorok"',Invisible:1b, Small:1b, Tags:["octorok","controller","red","enemy","SPAWN_TEMP","TYPE_A","ANIMATED","STUNNABLE"],Passengers:[{id:"item_display",Tags:["octorok","display","red","enemy"]}, {id:"interaction",CustomName:'"killed by red octorok"',Tags:["octorok","hitbox","red","hurts_player","enemy"],height:0.5f}]}
 
 # Define stats:
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] AnimationTimer -20
