@@ -9,7 +9,7 @@ function zelda:game/effects/hunger
 function zelda:game/effects/constant_effects
 
 ## Armos creation
-function zelda:game/temp_player_checks
+function zelda:game/enviorment/temp_player_checks
 
 ## Taking damage
 function zelda:player/damage/check_for_hitboxes
