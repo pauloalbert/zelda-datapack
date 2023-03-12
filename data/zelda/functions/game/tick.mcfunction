@@ -2,8 +2,8 @@
 execute as @a[tag=player] run function zelda:game/effects/health_attribute
 execute as @a[tag=player] run function zelda:game/effects/defence_attribute
 #effects
-function zelda:game/effects/hunger
-function zelda:game/effects/constant_effects
+execute as @a[tag=player] run function zelda:game/effects/hunger
+execute as @a[tag=player] run function zelda:game/effects/constant_effects
 
 
 execute as @e[tag=player,gamemode=adventure] at @s run function zelda:game/temp_player_checks
