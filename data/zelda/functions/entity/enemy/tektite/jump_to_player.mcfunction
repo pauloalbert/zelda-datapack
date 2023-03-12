@@ -23,7 +23,5 @@ scoreboard players set @s AnimationTimer -35
 ###jump_forward(Direction, behavior1, behavior2)
 execute as @s at @s run function zelda:entity/enemy/tektite/jump_forward
 #Rotate display and hitbox to match armor stand
-tag @s add passenger_filter
-execute on passengers run data modify entity @s Rotation[0] set from entity @e[type=armor_stand,tag=passenger_filter,limit=1,sort=nearest] Rotation[0]
-tag @s remove passenger_filter
+execute at @s on passengers run tp @s ~ ~ ~ ~ 0
 function zelda:entity/enemy/tektite/render
