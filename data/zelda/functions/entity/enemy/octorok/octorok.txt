@@ -1,0 +1,5 @@
+Information about octoroks:
+damage = 0.5 (1)
+health = 0.5 (1) / 1 (2)
+pellets = 0.5, blockable (0)
+

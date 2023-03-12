@@ -17,3 +17,4 @@ execute as @s[tag=projectile,tag=hurts_enemy] run function zelda:entity/projecti
 ## Enemies
 execute if score @s[tag=tektite,tag=controller] StunTimer matches 0.. run function zelda:entity/enemy/tektite/execute
 execute if score @s[tag=armos,tag=controller] StunTimer matches 0.. run function zelda:entity/enemy/armos/execute
+execute if score @s[tag=octorok,tag=controller] StunTimer matches 0.. run function zelda:entity/enemy/octorok/execute
