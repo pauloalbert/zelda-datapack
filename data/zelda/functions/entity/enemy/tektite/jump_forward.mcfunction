@@ -1,3 +1,5 @@
+###Run as tektite
+###Called by jump_*
 #Assumes @s. direction is forward, jump height is behavior2 (100) magnitude is behavior1
 scoreboard players operation in math = @s Direction
 function math:trig/cos
