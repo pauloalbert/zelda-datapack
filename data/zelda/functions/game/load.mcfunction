@@ -55,9 +55,6 @@ scoreboard objectives add RoundedHealth dummy
 scoreboard objectives add boomerang_id dummy
 #controlled by do damage
 scoreboard objectives add health_wrong deathCount
-#Misc (load every refresh)
-function zelda:misc/_load
-function zelda:entity/enemy/_load
 
 ### Misc
 #getNearestPlayer scoreboards
