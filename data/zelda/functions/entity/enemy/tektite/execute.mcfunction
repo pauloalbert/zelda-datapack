@@ -1,11 +1,11 @@
 ###Called by call_enemies
 ###Runs any miscallaneous stuff and then runs movements
 
-#Unstun entity
+# Unstun entity
 execute if score @s StunTimer matches 0 run data merge entity @s {NoGravity:0b}
 
 ###
-#Run Movement on animation reset
+# Run Movement on animation reset
 ###
 execute if score @s AnimationTimer matches 0.. run function zelda:entity/enemy/tektite/execute_next_action
 

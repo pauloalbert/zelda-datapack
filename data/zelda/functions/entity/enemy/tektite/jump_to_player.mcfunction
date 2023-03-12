@@ -1,6 +1,6 @@
-###Run as entity
-###Called by execute
-###Faces nearest player and jumps a random amount
+###Tektite action
+###Called by execute_next_action
+#Faces nearest player and jumps a random amount
 tp @s ~ ~ ~ facing entity @p[tag=player]
 execute store result score @s Direction run data get entity @s Rotation[0]
 
