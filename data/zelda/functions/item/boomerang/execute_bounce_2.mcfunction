@@ -5,7 +5,7 @@
 particle crit
 playsound zelda:effects.bomb_blow master @a ~ ~ ~ 0.85 2
 execute unless block ~ ~ ~ #zelda:passable_blocks run tellraw @a[tag=debugger] {"text": "IN A BLOCK"}
-execute unless block ~ ~ ~ #zelda:passable_blocks run scoreboard players set @s State 1
+execute unless block ~ ~ ~ #zelda:passable_blocks run scoreboard players set @s AnimationTimer 0
 execute store result score @s behavior2 run data get entity @s Rotation[0] 100
 execute store result score @s behavior3 run data get entity @s Rotation[1] 100
 #tellraw @a[tag=debugger] [{"text":"POS - "},{"nbt":"Pos","entity":"@s"}, {"text": " Angle: "},{"score":{"name": "@s","objective": "behavior2"}}]
