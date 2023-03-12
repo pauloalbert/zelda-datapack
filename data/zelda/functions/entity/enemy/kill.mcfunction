@@ -1,4 +1,4 @@
-#run on controller (location not guarranteed)
+### Run on controller of entity
 execute at @s run playsound zelda:effects.enemy_die hostile @a ~ ~ ~
 execute at @s run particle minecraft:poof ~ ~1 ~ 0.2 0.4 0.2 0 40 normal
 execute as @s at @s run function zelda:item/try_spawn

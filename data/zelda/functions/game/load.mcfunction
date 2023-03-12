@@ -1,5 +1,5 @@
 
-###CONSTANTS
+### CONSTANTS
 scoreboard players set #-1 constant -1
 scoreboard players set #0 constant 0
 scoreboard players set #1 constant 1
@@ -10,17 +10,17 @@ scoreboard players set #99 constant 99
 scoreboard players set #100 constant 100
 scoreboard players set #18000 constant 18000
 
-###GAME ZELDA CONSTANTS
+### GAME ZELDA CONSTANTS
 scoreboard objectives add zelda_constant dummy
 scoreboard players set #ENEMY_HURT_TIME zelda_constant -10
 scoreboard players set #BOOMERANGS_BOUNCE zelda_constant 1
 
-###Game variables
+### Game variables
 scoreboard objectives add Freeze dummy
 scoreboard objectives add Dungeon1Beaten dummy
 scoreboard objectives add BoomerangIDCount dummy
 
-###Enemies
+### Enemies
 #Camel case = these are respected non-volatile variables of the enemy.
 scoreboard objectives add Direction dummy
 scoreboard objectives add Health dummy
@@ -42,7 +42,7 @@ scoreboard objectives add EnemyConstant4 dummy
 scoreboard objectives add EnemyConstant5 dummy
 
 
-###Player
+### Player
 scoreboard objectives add Hunger food
 scoreboard objectives add MaxHealth dummy
 scoreboard objectives add RingLevel dummy
@@ -59,7 +59,7 @@ scoreboard objectives add health_wrong deathCount
 function zelda:misc/_load
 function zelda:entity/enemy/_load
 
-###Misc
+### Misc
 #getNearestPlayer scoreboards
 #volatile on player!, these are return values.
 scoreboard objectives add misc_x dummy

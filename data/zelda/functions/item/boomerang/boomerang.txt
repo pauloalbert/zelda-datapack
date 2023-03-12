@@ -17,3 +17,6 @@ execute_bounce_2:
     behavior--
     move forward
 
+State:
+    0 flying
+    1 returning
