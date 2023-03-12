@@ -10,4 +10,4 @@ summon marker 18.99 18.2 -30.5 {Tags:["cave_1", "message_controller"],data:{mess
 #endregion
 
 ### Mutual code to all markers, sets up the chests
-execute as @e[type=marker,tag=message_controller] at @s run function zelda:entity/npc/reset_text.mc
+execute as @e[type=marker,tag=message_controller] at @s run function zelda:entity/npc/reset_text_mc
