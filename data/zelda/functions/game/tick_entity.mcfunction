@@ -2,8 +2,8 @@
 
 
 ## Animation timers
-scoreboard players add @s[tag=!stunnable] AnimationTimer 1
-execute unless score @s[tag=stunnable] StunTimer matches ..-1 if score GAME Freeze matches 0 run scoreboard players add @s AnimationTimer 1
+scoreboard players add @s[tag=!STUNNABLE,tag=ANIMATED] AnimationTimer 1
+execute unless score @s[tag=STUNNABLE] StunTimer matches ..-1 if score GAME Freeze matches 0 run scoreboard players add @s AnimationTimer 1
 
 scoreboard players add @s[tag=controller] StunTimer 1
 scoreboard players add @s[tag=controller] HurtTimer 1

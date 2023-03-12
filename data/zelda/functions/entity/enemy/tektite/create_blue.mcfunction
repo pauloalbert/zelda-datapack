@@ -3,7 +3,7 @@
 #1-2: Animation time for jump
 #3-4: height range
 #5-6: distance range
-summon armor_stand ~ ~ ~ {CustomName:'"blue tektite"',Invisible:1b, Small:1b, Tags:["tektite","controller","blue","enemy","SPAWN_TEMP","TYPE_B"],Passengers:[{id:"item_display",CustomName:'"blue tektite"',item:{id:"piston",Count:1b,tag:{CustomModelData:11}},"transformation":{"translation":[0f,0.6f,0f],scale:[1f,1f,1f],left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f]},Tags:["tektite","display","blue","enemy"]}, {id:"interaction",CustomName:'"bested by blue tektite"',Tags:["tektite","hitbox","blue","hurts_player","enemy"]}]}
+summon armor_stand ~ ~ ~ {CustomName:'"blue tektite"',Invisible:1b, Small:1b, Tags:["tektite","controller","blue","enemy","SPAWN_TEMP","TYPE_B","ANIMATED","STUNNABLE"],Passengers:[{id:"item_display",CustomName:'"blue tektite"',item:{id:"piston",Count:1b,tag:{CustomModelData:11}},"transformation":{"translation":[0f,0.6f,0f],scale:[1f,1f,1f],left_rotation:[0f,1f,0f,0f],right_rotation:[0f,0f,0f,1f]},Tags:["tektite","display","blue","enemy"]}, {id:"interaction",CustomName:'"bested by blue tektite"',Tags:["tektite","hitbox","blue","hurts_player","enemy"]}]}
 
 # Define stats:
 scoreboard players set @e[distance=..1,tag=SPAWN_TEMP] AnimationTimer -20

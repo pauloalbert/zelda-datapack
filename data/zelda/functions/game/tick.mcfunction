@@ -17,4 +17,4 @@ execute as @e at @s run function zelda:game/tick_entity
 
 
 ## Dev
-execute as @e[gamemode = !adventure] run function zelda:game/effects/developer_effects
+execute as @a[gamemode = !adventure] run function zelda:game/effects/developer_effects
