@@ -2,7 +2,7 @@
 ###Currently called by a temp function
 
 # Create the armos
-summon armor_stand ~ ~-1 ~ {CustomName:'"armos"',Invisible:1b, Small:1b, Tags:["armos","controller","enemy","SPAWN_TEMP","TYPE_X"],Passengers:[{id:"block_display",block_state:{Name:"end_stone_bricks"},Tags:["armos","display","enemy"]}, {id:"interaction",width:0.9f,height:1.3f,CustomName:'"bested by armos"',Tags:["armos","hitbox","hurts_player","enemy"]}]}
+summon armor_stand ~ ~-1 ~ {CustomName:'"armos"',Invisible:1b, Small:1b, Tags:["armos","controller","enemy","SPAWN_TEMP","TYPE_X","ANIMATED","STUNNABLE"],Passengers:[{id:"block_display",block_state:{Name:"end_stone_bricks"},Tags:["armos","display","enemy"]}, {id:"interaction",width:0.9f,height:1.3f,CustomName:'"bested by armos"',Tags:["armos","hitbox","hurts_player","enemy"]}]}
 
 # Created by a block, needs respective tag for animation
 execute if block ~ ~ ~ minecraft:bricks run tag @e[distance=..1,tag=SPAWN_TEMP] add red

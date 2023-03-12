@@ -16,6 +16,4 @@ execute if entity @s[tag=green] if score @s State matches 1 if score @s behavior
 execute if entity @s[tag=white] if score @s State matches 1 if score @s behavior1 matches 1 on passengers if entity @s[tag=display] run data merge entity @s {block_state:{Name:"quartz_bricks"},transformation:{scale:[1f, 1f, 1f],translation:[-0.5f,0.3f,-0.5f],left_rotation:[0f,0f,0f,1f]}}
 
 # Rotate passenger as 
-tag @s add passenger_filter
-execute on passengers run data modify entity @s Rotation[0] set from entity @e[type=armor_stand,tag=passenger_filter,limit=1,sort=nearest] Rotation[0]
-tag @s remove passenger_filter
+execute at @s on passengers run tp @s ~ ~ ~ ~ 0
