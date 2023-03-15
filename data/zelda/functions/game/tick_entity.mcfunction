@@ -1,4 +1,4 @@
-###Run all entity related commands
+###Run all entity related commands (any entity that has a tag)
 
 
 ## Animation timers

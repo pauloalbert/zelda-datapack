@@ -12,7 +12,7 @@ execute if score GAME Freeze matches 2.. run scoreboard players remove GAME Free
 execute if score GAME Freeze matches 1 run function zelda:item/freeze/stop_freeze
 
 ## Entity
-execute as @e at @s run function zelda:game/tick_entity
+execute as @e at @s if data entity @s Tags[0] run function zelda:game/tick_entity
 
 
 
